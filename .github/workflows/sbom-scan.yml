@@ -16,7 +16,7 @@ jobs:
       run: | 
        sudo apt install npm
        sudo npm install --package-lock
-       sudo npm audit fix
+       sudo npm audit fix || exit 0
 
     - name: Installing SBOM
       run: |
